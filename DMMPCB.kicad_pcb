@@ -1,9 +1,6 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.7-e2-6376~58~ubuntu16.04.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.0.1-33cea8e~68~ubuntu18.04.1)
 
   (general
-    (links 38)
-    (no_connects 0)
-    (area 62.317143 17.685 166.282858 61.155)
     (thickness 1.6)
     (drawings 1)
     (tracks 122)
@@ -61,11 +58,15 @@
     (pad_size 1.524 1.524)
     (pad_drill 0.762)
     (pad_to_mask_clearance 0.2)
+    (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
     (pcbplotparams
       (layerselection 0x00000_80000000)
       (usegerberextensions false)
+      (usegerberattributes false)
+      (usegerberadvancedattributes false)
+      (creategerberjobfile false)
       (excludeedgelayer true)
       (linewidth 0.100000)
       (plotframeref false)
@@ -74,8 +75,7 @@
       (useauxorigin false)
       (hpglpennumber 1)
       (hpglpenspeed 20)
-      (hpglpendiameter 15)
-      (hpglpenoverlay 2)
+      (hpglpendiameter 15.000000)
       (psnegative false)
       (psa4output false)
       (plotreference true)
@@ -87,7 +87,7 @@
       (mirror false)
       (drillshape 2)
       (scaleselection 1)
-      (outputdirectory planos))
+      (outputdirectory "export/"))
   )
 
   (net 0 "")
@@ -170,7 +170,7 @@
     (pad 1 thru_hole circle (at 0 0) (size 1.5 1.5) (drill 0.6) (layers *.Cu *.Mask)
       (net 4 "Net-(D2-Pad2)"))
     (model ${KISYS3DMOD}/TO_SOT_Packages_THT.3dshapes/TO-92_Molded_Narrow.wrl
-      (at (xyz 0.05 0 0))
+      (offset (xyz 1.269999980926514 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
     )
@@ -494,7 +494,7 @@
     (pad 1 thru_hole circle (at 0 0) (size 1.5 1.5) (drill 0.6) (layers *.Cu *.Mask)
       (net 2 "Net-(D1-Pad2)"))
     (model ${KISYS3DMOD}/TO_SOT_Packages_THT.3dshapes/TO-92_Molded_Narrow.wrl
-      (at (xyz 0.05 0 0))
+      (offset (xyz 1.269999980926514 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
     )
@@ -531,7 +531,7 @@
     (pad 1 thru_hole circle (at 0 0 270) (size 1.5 1.5) (drill 0.6) (layers *.Cu *.Mask)
       (net 6 "Net-(D3-Pad2)"))
     (model ${KISYS3DMOD}/TO_SOT_Packages_THT.3dshapes/TO-92_Molded_Narrow.wrl
-      (at (xyz 0.05 0 0))
+      (offset (xyz 1.269999980926514 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
     )
